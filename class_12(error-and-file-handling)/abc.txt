@@ -1,0 +1,3 @@
+
+This is appended content in append mode.
+This is additional content in read and write mode.

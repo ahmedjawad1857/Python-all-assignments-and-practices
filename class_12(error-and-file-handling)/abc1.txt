@@ -1,0 +1,2 @@
+This is a new content in write mode.
+This is appended content in append mode.
