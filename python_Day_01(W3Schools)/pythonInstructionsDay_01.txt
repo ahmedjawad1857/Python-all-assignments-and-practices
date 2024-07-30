@@ -1,0 +1,203 @@
+ 
+ first we install python
+ secondly  we run command py fileName.py
+
+ Other escape characters used in Python:
+
+Code	Result
+\'	    Single Quote	
+\\	    Backslash	
+\n	    New Line	
+\r	    Carriage Return	
+\t	    Tab	
+\b	    Backspace	
+\f	    Form Feed	
+\ooo	Octal value	
+\xhh	Hex value
+
+
+all string methods
+
++------------------+------------------------------------------------------------+
+| Method           | Description                                                |
++------------------+------------------------------------------------------------+
+| capitalize()     | Converts the first character to upper case.                 |
+| casefold()       | Converts the string into lower case.                       |
+| center(width)    | Returns a centered string.                                  |
+| count(value, start, end) | Returns the number of times a specified value occurs.   |
+| encode(encoding, errors) | Returns an encoded version of the string.                |
+| endswith(suffix, start, end) | Returns true if the string ends with the specified value. |
+| expandtabs(tabsize) | Sets the tab size of the string.                            |
+| find(sub, start, end) | Searches the string for a specified value and returns its position. |
+| format(*args, **kwargs) | Formats specified values in a string.                    |
+| format_map(dict) | Formats specified values in a string.                      |
+| index(sub, start, end) | Searches the string for a specified value and returns its position. |
+| isalnum()        | Returns True if all characters in the string are alphanumeric. |
+| isalpha()        | Returns True if all characters in the string are in the alphabet. |
+| isascii()        | Returns True if all characters in the string are ASCII characters. |
+| isdecimal()      | Returns True if all characters in the string are decimals.  |
+| isdigit()        | Returns True if all characters in the string are digits.    |
+| isidentifier()   | Returns True if the string is an identifier.                |
+| islower()        | Returns True if all characters in the string are in lower case. |
+| isnumeric()      | Returns True if all characters in the string are numeric.   |
+| isprintable()    | Returns True if all characters in the string are printable. |
+| isspace()        | Returns True if all characters in the string are whitespaces. |
+| istitle()        | Returns True if the string follows the rules of a title.    |
+| isupper()        | Returns True if all characters in the string are in upper case. |
+| join(iterable)   | Joins the elements of an iterable to the end of the string. |
+| ljust(width)     | Returns a left-justified version of the string.            |
+| lower()          | Converts a string into lower case.                         |
+| lstrip(chars)    | Returns a left-trimmed version of the string.              |
+| maketrans(x, y, z) | Returns a translation table to be used in translations.    |
+| partition(sep)   | Returns a tuple where the string is divided into three parts. |
+| replace(old, new, count) | Returns a string where a specified value is replaced.    |
+| rfind(sub, start, end) | Searches the string for a specified value and returns the last position. |
+| rindex(sub, start, end) | Searches the string for a specified value and returns the last position. |
+| rjust(width)     | Returns a right-justified version of the string.           |
+| rpartition(sep)  | Returns a tuple where the string is divided into three parts. |
+| rsplit(sep, maxsplit) | Splits the string at the specified separator and returns a list. |
+| rstrip(chars)    | Returns a right-trimmed version of the string.             |
+| split(sep, maxsplit) | Splits the string at the specified separator and returns a list. |
+| splitlines(keepends) | Splits the string at line breaks and returns a list.      |
+| startswith(prefix, start, end) | Returns true if the string starts with the specified value. |
+| strip(chars)     | Returns a trimmed version of the string.                   |
+| swapcase()       | Swaps cases; lower case becomes upper case and vice versa. |
+| title()          | Converts the first character of each word to upper case.   |
+| translate(table) | Returns a translated string.                               |
+| upper()          | Converts a string into upper case.                         |
+| zfill(width)     | Fills the string with a specified number of 0 values at the beginning. |
++------------------+------------------------------------------------------------+
+
+Python divides the operators in the following groups:
+
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Identity operators
+Membership operators
+Bitwise operators
+
+
+Python Arithmetic Operators
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
++------------------+------------+--------+
+| Operator         | Name       | Example|
++------------------+------------+--------+
+| +                | Addition   | x + y  |
+| -                | Subtraction| x - y  |
+| *                | Multiplication | x * y|
+| /                | Division   | x / y  |
+| %                | Modulus    | x % y  |
+| **               | Exponentiation | x ** y |
+| //               | Floor division | x // y |
++------------------+------------+--------+
+
+
+
+
+
+Python Assignment Operators
+Assignment operators are used to assign values to variables:
+
++-------+-----------+--------------+
+| Operator | Example   | Same As      |
++-------+-----------+--------------+
+| =       | x = 5     | x = 5        |
+| +=      | x += 3    | x = x + 3    |
+| -=      | x -= 3    | x = x - 3    |
+| *=      | x *= 3    | x = x * 3    |
+| /=      | x /= 3    | x = x / 3    |
+| %=      | x %= 3    | x = x % 3    |
+| //=     | x //= 3   | x = x // 3   |
+| **=     | x **= 3   | x = x ** 3   |
+| &=      | x &= 3    | x = x & 3    |
+| |=      | x |= 3    | x = x | 3    |
+| ^=      | x ^= 3    | x = x ^ 3    |
+| >>=     | x >>= 3   | x = x >> 3   |
+| <<=     | x <<= 3   | x = x << 3   |
++-------+-----------+--------------+
+
+
+Python Comparison Operators
+Comparison operators are used to compare two values:
+
++-------+-------------------------+---------+
+| Operator | Name                    | Example |
++-------+-------------------------+---------+
+| ==      | Equal                   | x == y  |
+| !=      | Not equal               | x != y  |
+| >       | Greater than            | x > y   |
+| <       | Less than               | x < y   |
+| >=      | Greater than or equal to | x >= y |
+| <=      | Less than or equal to    | x <= y |
++-------+-------------------------+---------+
+
+
+Python Logical Operators
+Logical operators are used to combine conditional statements:
+
++-------+---------------------------+----------------------------------+
+| Operator | Description             | Example                          |
++-------+---------------------------+----------------------------------+
+| and     | Returns True if both statements are true | x < 5 and x < 10              |
+| or      | Returns True if one of the statements is true | x < 5 or x < 4                |
+| not     | Reverse the result, returns False if the result is true | not(x < 5 and x < 10)          |
++-------+---------------------------+----------------------------------+
+
+
+Python Membership Operators
+Membership operators are used to test if a sequence is presented in an object:
+
++--------+-----------------------------------+-----------------+
+| Operator | Description                   | Example         |
++--------+-----------------------------------+-----------------+
+| in       | Returns True if a sequence with the specified value is present in the object | x in y         |
+| not in   | Returns True if a sequence with the specified value is not present in the object | x not in y     |
++--------+-----------------------------------+-----------------+
+
+
+Python Bitwise Operators
+Bitwise operators are used to compare (binary) numbers:
+
+    +-------+-------+-------------------------+--------+-------+
+| Operator | Name  | Description                | Example | Try it|
++-------+-------+-------------------------+--------+-------+
+| &        | AND   | Sets each bit to 1 if both bits are 1 | x & y  | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
+| \|      | OR    | Sets each bit to 1 if one of two bits is 1 | x \| y | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
+| ^       | XOR   | Sets each bit to 1 if only one of two bits is 1 | x ^ y  | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
+| ~       | NOT   | Inverts all the bits        | ~x     | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
+| <<      | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off | x << 2 | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
+| >>      | Signed right shift    | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off | x >> 2 | [Try it](https://www.programiz.com/python-programming/bitwise-operators) |
++-------+-------+-------------------------+--------+-------+
+
+Operator Precedence
+Operator precedence describes the order in which operations are performed.
+
++-------+----------------------------------+-----------------------------+
+| Operator | Description                          | Example                     |
++-------+----------------------------------+-----------------------------+
+| ()      | Parentheses                          | (x + y)                     |
+| **      | Exponentiation                       | x ** y                      |
+| +x, -x, ~x | Unary plus, unary minus, and bitwise NOT | +x, -x, ~x                |
+| *       | Multiplication                       | x * y                       |
+| /       | Division                            | x / y                       |
+| //      | Floor division                      | x // y                      |
+| %       | Modulus                             | x % y                       |
+| +, -    | Addition and subtraction            | x + y, x - y                |
+| <<, >>  | Bitwise left and right shifts        | x << 2, x >> 2              |
+| &       | Bitwise AND                          | x & y                       |
+| ^       | Bitwise XOR                          | x ^ y                       |
+| \|      | Bitwise OR                           | x \| y                      |
+| ==, !=  | Comparisons                          | x == y, x != y              |
+| >, >=   |                                      | x > y, x >= y               |
+| <, <=   |                                      | x < y, x <= y               |
+| is, is not | Identity checks                    | x is y, x is not y          |
+| in, not in | Membership checks                  | x in y, x not in y          |
+| not     | Logical NOT                         | not x                       |
+| and     | Logical AND                         | x and y                     |
+| or      | Logical OR                          | x or y                      |
++-------+----------------------------------+-----------------------------+
+
+
