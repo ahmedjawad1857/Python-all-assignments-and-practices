@@ -1,0 +1,163 @@
+list comprehension syntax
+newlist = [expression for item in iterable if condition == True ] or newlist = [print(expression) for item in iterable]
+
+list methods
++-----------+----------------------------------------------------------------+
+| Method    | Description                                                    |
++-----------+----------------------------------------------------------------+
+| append()  | Adds an element at the end of the list.                        |
+| clear()   | Removes all the elements from the list.                        |
+| copy()    | Returns a copy of the list.                                    |
+| count()   | Returns the number of elements with the specified value.       |
+| extend()  | Add the elements of a list (or any iterable) to the end of     |
+|  //       | the current list.                                              |
+| index()   | Returns the index of the first element with the specified      |
+|  //       | value.                                                         |
+| insert()  | Adds an element at the specified position.                     |
+| pop()     | Removes the element at the specified position.                 |
+| remove()  | Removes the item with the specified value.                     |
+| reverse() | Reverses the order of the list.                                |
+| sort()    | Sorts the list.                                                |
++-----------+---------------------------------------------------------------+
+
++-----------+-------------------------------------------------------------------+
+| Method    | Description                                                       |
++-----------+-------------------------------------------------------------------+
+| count()	| Returns the number of times a specified value occurs in a tuple.  |
+| index()	| Searches the tuple for a specified value and returns the position |
+|   \\      | of where it was found.                                            |
++-----------+-------------------------------------------------------------------+
+
+Python Collections (Arrays)
+There are four collection data types in the Python programming language:
+
+•List is a collection which is ordered and changeable. Allows duplicate members.
+•Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+•Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+•Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+python sets methods
+
++---------------------------+---------------------------------------------------------+
+| Method                    | Description                                             |
++---------------------------+---------------------------------------------------------+
+| add()                     | Adds an element to the set                               |
+| clear()                   | Removes all the elements from the set                    |
+| copy()                    | Returns a copy of the set                                 |
+| difference()              | Returns a set containing the difference between two or   |
+|                           | more sets                                               |
+| difference_update()       | Removes the items in this set that are also included in  |
+|                           | another, specified set                                   |
+| discard()                 | Remove the specified item                                |
+| intersection()            | Returns a set that is the intersection of two other sets |
+| intersection_update()     | Removes the items in this set that are not present in    |
+|                           | other, specified set(s)                                  |
+| isdisjoint()              | Returns whether two sets have an intersection or not     |
+| issubset()                | Returns whether another set contains this set or not     |
+| issuperset()              | Returns whether this set contains another set or not     |
+| pop()                     | Removes an element from the set                           |
+| remove()                  | Removes the specified element                            |
+| symmetric_difference()    | Returns a set with the symmetric differences of two sets  |
+| symmetric_difference_update() | Inserts the symmetric differences from this set and   |
+|                           | another                                               |
+| union()                   | Return a set containing the union of sets                |
+| update()                  | Update the set with the union of this set and others     |
++---------------------------+---------------------------------------------------------+
+
+
+python dictionary methods
+
++-------------+----------------------------------------------------------+
+| Method      | Description                                              |
++-------------+----------------------------------------------------------+
+| clear()     | Removes all the elements from the dictionary              |
+| copy()      | Returns a copy of the dictionary                           |
+| fromkeys()  | Returns a dictionary with the specified keys and value    |
+| get()       | Returns the value of the specified key                    |
+| items()     | Returns a list containing a tuple for each key-value pair |
+| keys()      | Returns a list containing the dictionary's keys           |
+| pop()       | Removes the element with the specified key                |
+| popitem()   | Removes the last inserted key-value pair                  |
+| setdefault()| Returns the value of the specified key. If the key does not|
+|             | exist: insert the key, with the specified value           |
+| update()    | Updates the dictionary with the specified key-value pairs |
+| values()    | Returns a list of all the values in the dictionary        |
++-------------+----------------------------------------------------------+
+
+
+Python supports the usual logical conditions from mathematics:
+
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+Python has two primitive loop commands:
+
+•while loops
+•for loops
+
+Python For Loops
+A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+Nested Loops
+A nested loop is a loop inside a loop.
+
+The "inner loop" will be executed one time for each iteration of the "outer loop":
+
+A function is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a function.
+
+A function can return data as a result
+
+Arguments
+Information can be passed into functions as arguments.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+Parameters or Arguments?
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
+
+Number of Arguments
+By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.
+
+Arbitrary Arguments, *args
+If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+
+Arbitrary Keyword Arguments, **kwargs
+If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+
+You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+
+Recursion
+Python also accepts function recursion, which means a defined function can call itself.
+
+Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.
+
+The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.
+
+In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).
+
+To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.
+
+lambda syntax
+lambda arguments : expression
+
+Why Use Lambda Functions?
+The power of lambda is better shown when you use them as an anonymous function inside another function.
+
+Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+
